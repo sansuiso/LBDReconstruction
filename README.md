@@ -85,6 +85,7 @@ The wavelet transform was initially implemented in C by [Jérôme Gilles](http:/
 
 _From Bits to Images: Inversion of Local Binary Descriptors_ [pre-print on arxiv][arxiv]
 E. d'Angelo, L. Jacques, A. Alahi, P. Vandergheynst
+Submitted.
 
 _Beyond Bits: Reconstructing Images from Local Binary Descriptors_ [pre-print on infoscience][icpr12]
 E. d'Angelo, A. Alahi, P. Vandergheynst
@@ -99,6 +100,9 @@ M. Calonder, V. Lepetit, C. Strecha, P. Fua
 11th European Conference on Computer Vision (ECCV), 2010.
 
 [icpr12]: http://infoscience.epfl.ch/record/178299 "Beyond Bits: Reconstructing Images from Local Binary Descriptors"
+
 [arxiv] : http://arxiv.org "From Bits to Images: Inversion of Local Binary Descriptors"
+
 [brief] : http://cvlab.epfl.ch/research/detect/brief/ "BRIEF"
+
 [freak] : http://infoscience.epfl.ch/record/175537 "FREAK"

@@ -55,7 +55,7 @@ The following LBDs are implemented:
 * Random FREAK: similar to FREAK with random selection of the difference pairs instead
 * Exhaustive FREAK: similar to FREAK but uses all the possible difference pairs instead.
 
-New LBDs can be added by subclassing the abstract class *LBDOperator*.
+New LBDs can be added by subclassing the abstract class `LBDOperator`.
 
 ### Code organization
 
@@ -73,9 +73,11 @@ src
 
 ### Naming patterns
 
-If the name of a file starts with an *I*, it declares or implements an abstract class.
+If the name of a file starts with an `I`, it declares or implements an abstract class.
 
-All the classes are embedded in an _lts2_ namespace.
+* Example : the file `ILinearOperator.hpp` declares the abstract class `LinearOperator`.
+
+All the classes are embedded in an `lts2` namespace.
 
 ## TODO
 

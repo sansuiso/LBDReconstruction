@@ -101,8 +101,8 @@ M. Calonder, V. Lepetit, C. Strecha, P. Fua
 
 [icpr12]: http://infoscience.epfl.ch/record/178299 "Beyond Bits: Reconstructing Images from Local Binary Descriptors"
 
-[arxiv] : http://arxiv.org "From Bits to Images: Inversion of Local Binary Descriptors"
+[arxiv]: http://arxiv.org "From Bits to Images: Inversion of Local Binary Descriptors"
 
-[brief] : http://cvlab.epfl.ch/research/detect/brief/ "BRIEF"
+[brief]: http://cvlab.epfl.ch/research/detect/brief/ "BRIEF"
 
-[freak] : http://infoscience.epfl.ch/record/175537 "FREAK"
+[freak]: http://infoscience.epfl.ch/record/175537 "FREAK"

@@ -83,19 +83,19 @@ The wavelet transform was initially implemented in C by [Jérôme Gilles](http:/
 
 ## References
 
-_From Bits to Images: Inversion of Local Binary Descriptors_ [pre-print on arxiv][arxiv]
-E. d'Angelo, L. Jacques, A. Alahi, P. Vandergheynst
+_From Bits to Images: Inversion of Local Binary Descriptors_ [pre-print on arxiv][arxiv]  
+E. d'Angelo, L. Jacques, A. Alahi, P. Vandergheynst  
 Submitted.
 
-_Beyond Bits: Reconstructing Images from Local Binary Descriptors_ [pre-print on infoscience][icpr12]
-E. d'Angelo, A. Alahi, P. Vandergheynst
+_Beyond Bits: Reconstructing Images from Local Binary Descriptors_ [pre-print on infoscience][icpr12]  
+E. d'Angelo, A. Alahi, P. Vandergheynst  
 21st International Conference on Pattern Recognition (ICPR), 2012.
 
-_FREAK: Fast Retina Keypoint_
-A. Alahi, R. Ortiz, P. Vandergheynst
-IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2012.
+_FREAK: Fast Retina Keypoint_ [pre-print on infoscience][freak] [homepage][freak-home]  
+A. Alahi, R. Ortiz, P. Vandergheynst  
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2012.  
 
-_Binary Robust Independant Elemantary Features_ [homepage][brief]
+_Binary Robust Independant Elemantary Features_ [homepage][brief]  
 M. Calonder, V. Lepetit, C. Strecha, P. Fua
 11th European Conference on Computer Vision (ECCV), 2010.
 
@@ -103,6 +103,8 @@ M. Calonder, V. Lepetit, C. Strecha, P. Fua
 
 [arxiv]: http://arxiv.org "From Bits to Images: Inversion of Local Binary Descriptors"
 
-[brief]: http://cvlab.epfl.ch/research/detect/brief/ "BRIEF"
+[brief]: http://cvlab.epfl.ch/research/detect/brief/ "BRIEF homepage"
 
 [freak]: http://infoscience.epfl.ch/record/175537 "FREAK"
+
+[freak-home]: http://www.ivpe.com/freak.htm "FREAK homepage"

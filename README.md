@@ -103,7 +103,7 @@ _FREAK: Fast Retina Keypoint_ [ \[pre-print\] ][freak] [ \[homepage\] ][freak-ho
 A. Alahi, R. Ortiz, P. Vandergheynst  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2012.  
 
-_Binary Robust Independant Elemantary Features_ [ \[homepage\] ][brief]  
+_Binary Robust Independent Elementary Features_ [ \[homepage\] ][brief]  
 M. Calonder, V. Lepetit, C. Strecha, P. Fua
 11th European Conference on Computer Vision (ECCV), 2010.
 

@@ -3,14 +3,14 @@ LBDReconstruction
 
 This is the companion code for our work on Local Binary Descriptors (LBD) reconstruction:
 
-* From Bits to Images: Inversion of Local Binary Descriptors (submitted)
-* Beyond Bits: Reconstructing Images from Local Binary Descriptors, ICPR 2012 [link on infoscience][icpr12]
+* From Bits to Images: Inversion of Local Binary Descriptors (submitted) [ \[pre-print\] ][arxiv]
+* Beyond Bits: Reconstructing Images from Local Binary Descriptors, ICPR 2012 [ \[pre-print\] ][icpr12]
 
 It was used to generate the figures in the above references.
 
 ### Authors
 
-* [Emmanuel d'Angelo](mailto:emmanuel.dangelo@epfl.ch) (code)
+* [Emmanuel d'Angelo](mailto:emmanuel.dangelo@epfl.ch) (code, contact author)
 * [Alexandre Alahi](http://www.ivpe.com)
 * [Laurent Jacques](http://perso.uclouvain.be/laurent.jacques/)
 * [Pierre Vandergheynst](http://personnes.epfl.ch/pierre.vandergheynst)
@@ -36,8 +36,8 @@ Optionally, the code can take advantage of [Grand Central Dispatch](http://en.wi
 You should respect the Cmake approach of out-of-source building for better results.
 When using Cmake from the command line, the following specific options are available:
 
-* WITH_DISPATCH (ON/OFF, default: OFF) : use Grand Central Dispatch for parallel execution
-* BUILD_DOC (ON/OFF, default. OFF) : build the documentation with Doxygen (not much to build right now...)
+* WITH\_DISPATCH (ON/OFF, default: OFF) : use Grand Central Dispatch for parallel execution
+* BUILD\_DOC (ON/OFF, default. OFF) : build the documentation with Doxygen (not much to build right now...)
 
 ## Code summary
 
@@ -91,19 +91,19 @@ The wavelet transform was initially implemented in C by [Jérôme Gilles](http:/
 
 ## References
 
-_From Bits to Images: Inversion of Local Binary Descriptors_ [pre-print on arxiv][arxiv]  
+_From Bits to Images: Inversion of Local Binary Descriptors_ [ \[pre-print\] ][arxiv]  
 E. d'Angelo, L. Jacques, A. Alahi, P. Vandergheynst  
 Submitted.
 
-_Beyond Bits: Reconstructing Images from Local Binary Descriptors_ [pre-print on infoscience][icpr12]  
+_Beyond Bits: Reconstructing Images from Local Binary Descriptors_ [ \[pre-print\] ][icpr12]  
 E. d'Angelo, A. Alahi, P. Vandergheynst  
 21st International Conference on Pattern Recognition (ICPR), 2012.
 
-_FREAK: Fast Retina Keypoint_ [pre-print on infoscience][freak] [homepage][freak-home]  
+_FREAK: Fast Retina Keypoint_ [ \[pre-print\] ][freak] [ \[homepage\] ][freak-home]  
 A. Alahi, R. Ortiz, P. Vandergheynst  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2012.  
 
-_Binary Robust Independant Elemantary Features_ [homepage][brief]  
+_Binary Robust Independant Elemantary Features_ [ \[homepage\] ][brief]  
 M. Calonder, V. Lepetit, C. Strecha, P. Fua
 11th European Conference on Computer Vision (ECCV), 2010.
 

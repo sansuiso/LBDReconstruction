@@ -77,6 +77,14 @@ If the name of a file starts with an *I*, it declares or implements an abstract 
 
 All the classes are embedded in an _lts2_ namespace.
 
+## TODO
+
+* Improve Doxygen documentation
+* Unify files/functions/classes naming patterns
+* More flexible optimization (math) functions using C++11
+* Replace Grand Central Dispatch with OpenCV's new parallel_for()
+* Faster wavelet transform (using a parallel algorithm)
+
 ## Acknowledgement
 
 The wavelet transform was initially implemented in C by [Jérôme Gilles](http://www.math.ucla.edu/~jegilles/) from the classical book of Stéphane Mallat [A Wavelet Tour of Signal Processing](http://www.amazon.com/exec/obidos/tg/detail/-/012466606X/).

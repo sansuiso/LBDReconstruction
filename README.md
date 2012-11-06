@@ -61,15 +61,15 @@ New LBDs can be added by subclassing the abstract class *LBDOperator*.
 
 The layout of the code is as follows:
 
-src
- |
- |-- LBDReconstruction : small static library implementing LBDs and reconstruction algorithms
- |
- |-- utils : various command line tools to plot, draw, compute constants...
- |
- |-- real : command line tools to apply the TV-L1 and W-L1 algorithms above
- |
- |-- binary : command line tools to apply the BIHT algorithm above
+src  
+ |  
+ |\-\- LBDReconstruction : small static library implementing LBDs and reconstruction algorithms  
+ |  
+ |\-\- utils : various command line tools to plot, draw, compute constants...  
+ |  
+ |\-\- real : command line tools to apply the TV-L1 and W-L1 algorithms above  
+ |  
+ |\-\- binary : command line tools to apply the BIHT algorithm above  
 
 ### Naming patterns
 

@@ -203,8 +203,8 @@ void lts2::LBDOperator::drawSelfAsCircles(cv::Mat &destImage) const
   destImage.setTo(cv::Scalar::all(255));
 
   // Shortcuts
-  cv::Scalar red = CV_RGB(255, 0, 0);
-  cv::Scalar black = CV_RGB(0, 0, 0);
+  cv::Scalar red = cv::Scalar(0, 0, 255);
+  cv::Scalar black = cv::Scalar(0, 0, 0);
 
   // Loop over the cells
   for (int i = 0; i < this->pairs(); ++i)
@@ -316,7 +316,7 @@ void lts2::LBDOperator::ReleaseMemory() {}
 
 void lts2::LBDOperator::recordBasisMovie(std::string const& movieName)
 {
-    cv::VideoWriter movie(movieName, CV_FOURCC('m', 'p', '4', 'v'), 2.0, _patchSize);
+  cv::VideoWriter movie(movieName, cv::VideoWriter::fourcc('m', 'p', '4', 'v'), 2.0, _patchSize);
     
     cv::Mat currrentFrame, grayFrame;
     cv::Mat basisImage(_patchSize, CV_32F, cv::Scalar(0));
@@ -333,7 +333,7 @@ void lts2::LBDOperator::recordBasisMovie(std::string const& movieName)
         basisImage.convertTo(grayFrame, CV_8U, 255.0/(bmax-bmin), -255.0*bmin/(bmax-bmin));
         
         // Color
-        cv::cvtColor(grayFrame, currrentFrame, CV_GRAY2BGR);
+        cv::cvtColor(grayFrame, currrentFrame, cv::COLOR_GRAY2BGR);
         
         movie << currrentFrame;
     }

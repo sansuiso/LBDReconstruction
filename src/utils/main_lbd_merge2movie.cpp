@@ -60,7 +60,7 @@ int main(int argc, char const * const argv[])
 
   // Output movie
   double fps = 1.25;
-  int fourcc = CV_FOURCC('m','p','4','v');
+  int fourcc = cv::VideoWriter::fourcc('m','p','4','v');
   cv::Size frameSize = I0.size();
 
   cv::VideoWriter movie(argv[argc-1], fourcc, fps, frameSize, true);
@@ -80,7 +80,7 @@ int main(int argc, char const * const argv[])
   {
     mixf = (1.0-mixCoeff)*I0f + mixCoeff*I1f;
     mixf.convertTo(mix8, CV_8U, 255.0);
-    cv::cvtColor(mix8, mixc, CV_GRAY2BGR);
+    cv::cvtColor(mix8, mixc, cv::COLOR_GRAY2BGR);
 
     movie << mixc;
 
@@ -93,7 +93,7 @@ int main(int argc, char const * const argv[])
   {
     mixf = (1.0-mixCoeff)*I0f + mixCoeff*I1f;
     mixf.convertTo(mix8, CV_8U, 255.0);
-    cv::cvtColor(mix8, mixc, CV_GRAY2BGR);
+    cv::cvtColor(mix8, mixc, cv::COLOR_GRAY2BGR);
 
     movie << mixc;
 

@@ -49,11 +49,11 @@ namespace lts2
 
   void BinaryReconstructionWithBIHT(cv::Mat &x, LBDOperator &LBD, cv::Mat const &binaryDescriptor,
                                     int iterations, float sparsityCoeff, cv::Size patchSize,
-                                    float patchMean=0.5, int norm=CV_L1, std::string const &wavelet="haar");
+                                    float patchMean=0.5, int norm=cv::NORM_L1, std::string const &wavelet="haar");
 
   void RealReconstructionWithIHT(cv::Mat &X, LBDOperator &LBD, cv::Mat const &realDescriptor,
                                  int iterations, float sparsityCoeff, cv::Size patchSize,
-                                 float patchMean=0.5, int norm=CV_L1, std::string const &wavelet="haar");
+                                 float patchMean=0.5, int norm=cv::NORM_L1, std::string const &wavelet="haar");
 
   void PerformTVL1OnImage(cv::Mat const &anImage, cv::Size patchSize, cv::Point patchOffset,
                           LBDOperator &LBD, cv::Mat &result, int iterations=200, float lambda=1e-1, float patchMean=0.5);

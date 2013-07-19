@@ -89,7 +89,7 @@ void ExtractFastKeypoints(cv::Mat const &anImage, std::vector<cv::KeyPoint> &fas
 
   cv::Mat srcImage;
   if (anImage8.channels() == 1)
-    cv::cvtColor(anImage8, srcImage, CV_GRAY2BGR);
+    cv::cvtColor(anImage8, srcImage, cv::COLOR_GRAY2BGR);
   else
     srcImage = anImage8;
 
@@ -356,7 +356,7 @@ void lts2::BinaryReconstructionWithBIHT(cv::Mat &X, LBDOperator &LBD, cv::Mat co
                                         int iterations, float sparsityCoeff, cv::Size patchSize, float patchMean,
                                         int norm, std::string const &wavelet)
 {
-  CV_Assert(norm == CV_L1 || norm == CV_L2);
+  CV_Assert(norm == cv::NORM_L1 || norm == cv::NORM_L2);
 
   int const M = MAX(binaryDescriptor.rows, binaryDescriptor.cols);
   float const tau = 1.0 / (float)M;
@@ -388,7 +388,7 @@ void lts2::BinaryReconstructionWithBIHT(cv::Mat &X, LBDOperator &LBD, cv::Mat co
   // Special init if norm = L2
   X.create(patchSize, CV_32FC1);
   X.setTo(cv::Scalar(0.0));
-  if (norm == CV_L2)
+  if (norm == cv::NORM_L2)
   {
     LBD.ApplyConjugate(binaryDescriptor, X_im);
     lts2::WaveletTransform2D(X_im, X, P, Q, fsize, &ww, &wh);
@@ -406,7 +406,7 @@ void lts2::BinaryReconstructionWithBIHT(cv::Mat &X, LBDOperator &LBD, cv::Mat co
     LBD.Apply(X_im, Ax);
 
     // Step 1a : gradient
-    if (norm == CV_L1)
+    if (norm == cv::NORM_L1)
     {
       Ax -= binaryDescriptor;
 
@@ -783,11 +783,11 @@ void lts2::RealReconstructionWithIHT(cv::Mat &X, LBDOperator &LBD, cv::Mat const
                                      int iterations, float sparsityCoeff, cv::Size patchSize, float patchMean,
                                      int norm, std::string const &wavelet)
 {
-  CV_Assert(norm == CV_L1 || norm == CV_L2);
+  CV_Assert(norm == cv::NORM_L1 || norm == cv::NORM_L2);
   CV_Assert(realDescriptor.type() == CV_32F);
 
   int const M = MAX(realDescriptor.rows, realDescriptor.cols);
-  float const tau = (norm == CV_L2 ? 1.0/(float)M : 0.5/(float)M);
+  float const tau = (norm == cv::NORM_L2 ? 1.0/(float)M : 0.5/(float)M);
 
   sparsityCoeff = MAX(MIN(sparsityCoeff, 1.0), 0.0);
   int const K = (int)rintf( sparsityCoeff*patchSize.area() );
@@ -813,7 +813,7 @@ void lts2::RealReconstructionWithIHT(cv::Mat &X, LBDOperator &LBD, cv::Mat const
   // Special init if norm = L2
   X.create(patchSize, CV_32FC1);
   X.setTo(cv::Scalar(0.0));
-  if (norm == CV_L2)
+  if (norm == cv::NORM_L2)
   {
     LBD.ApplyConjugate(realDescriptor, X_im);
     lts2::WaveletTransform2D(X_im, X, P, Q, fsize, &ww, &wh);
@@ -832,7 +832,7 @@ void lts2::RealReconstructionWithIHT(cv::Mat &X, LBDOperator &LBD, cv::Mat const
     Ax -= realDescriptor;
 
     // Step 1a : gradient
-    if (norm == CV_L1)
+    if (norm == cv::NORM_L1)
     {
       float norm_error = cv::norm(Ax);
       norm_error = (norm_error > LTS2_EPSILON ? norm_error : 1.0);

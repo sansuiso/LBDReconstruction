@@ -33,6 +33,10 @@
 #ifndef LTS2_ILINEAROPERATOR_HPP
 #define LTS2_ILINEAROPERATOR_HPP
 
+#ifndef __APPLE__ || _WIN32 || _WIN64
+#include <unistd.h>   // For getpid()
+#endif
+
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 

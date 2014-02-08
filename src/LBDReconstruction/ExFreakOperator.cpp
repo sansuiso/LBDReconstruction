@@ -167,36 +167,6 @@ void lts2::ExFreakOperator::Apply(cv::Mat const& X, cv::Mat& Ax)
 #endif
 }
 
-void lts2::ExFreakOperator::ApplyConjugate(cv::Mat const& X, cv::Mat& AstarX)
-{
-    // The output is an image (actually, a patch)
-    AstarX.create(_patchSize, CV_32F);
-    
-    // Stub to hold the current image basis function: we will write
-    // each basis function into it
-    cv::Mat basisImage(_patchSize, CV_32F, cv::Scalar(0));
-    
-    // Coordinate value
-    float const* p_x = X.ptr<float>(0);
-    
-    // Sum over the basis functions
-    for (int i = 0; i < _pairsInUse; ++i)
-    {
-        // Reset
-        basisImage.setTo(cv::Scalar(0));
-        
-        // Add "nominal" basis function
-        fillBasisFunctionForIndex(basisImage, i);
-        
-        // Apply the amplitude
-        basisImage *= (*p_x);
-        ++p_x;
-        
-        // Sum
-        AstarX += basisImage;
-    }
-}
-
 float lts2::ExFreakOperator::L() const
 {
     return 10.0;

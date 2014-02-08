@@ -50,7 +50,6 @@ namespace lts2
     
     // Inherited methods
     virtual void Apply(cv::Mat const& X, cv::Mat& Ax);
-    virtual void ApplyConjugate(cv::Mat const& X, cv::Mat& AStarX);
     virtual float L() const;
     virtual void RelaseMemory();
   };

@@ -286,7 +286,8 @@ void lts2::LBDOperator::ApplyConjugate(cv::Mat const& X, cv::Mat& AstarX)
 {
     // The output is an image (actually, a patch)
     AstarX.create(_patchSize, CV_32F);
-    
+    AstarX.setTo(cv::Scalar(0));
+
     // Stub to hold the current image basis function: we will write
     // each basis function into it
     cv::Mat basisImage(_patchSize, CV_32F, cv::Scalar(0));

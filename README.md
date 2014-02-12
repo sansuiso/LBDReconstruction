@@ -10,7 +10,7 @@ It was used to generate the figures in the above references.
 
 ### Authors
 
-* [Emmanuel d'Angelo](mailto:emmanuel.dangelo@epfl.ch) (code, contact author)
+* [Emmanuel d'Angelo](mailto:emmanuel.dangelo@gmail.com) (code, contact author)
 * [Alexandre Alahi](http://www.ivpe.com)
 * [Laurent Jacques](http://perso.uclouvain.be/laurent.jacques/)
 * [Pierre Vandergheynst](http://personnes.epfl.ch/pierre.vandergheynst)

@@ -90,7 +90,7 @@ int main(int argc, char **argv)
       {
         if (strncmp(optarg, "freak", 5) == 0) lbdType = (int)lbd::eTypeFreak;
         else if (strncmp(optarg, "brief", 5) == 0) lbdType = (int)lbd::eTypeBrief;
-        else if (strncmp(optarg, "exfreak", 7) == 0) lbdType = (int)lbd::eTypeExFreaks;
+        else if (strncmp(optarg, "exfreak", 7) == 0) lbdType = (int)lbd::eTypeExFreak;
         else lbdType = lbd::eTypeRandomFreak;
       }
       if (optionIndex == 3)
@@ -173,7 +173,7 @@ int main(int argc, char **argv)
     windowNameStr << "BRIEF";
     break;
 
-  case lbd::eTypeExFreaks:
+  case lbd::eTypeExFreak:
     windowNameStr << "Ex-FREAK";
     break;
   }

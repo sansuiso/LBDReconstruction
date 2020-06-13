@@ -19,13 +19,13 @@ It was used to generate the figures in the above references.
 
 ### Supported platforms
 
-The software is written in C++. Installing and using it should be straightforward for any platform where the dependencies are satisfied.
-Note however that it was developed and tested on MacOS X 10.7 only.
+The software is written in C++ (with C++14 set as the required standard). Installing and using it should be straightforward for any platform where the dependencies are satisfied.
+Note however that it was developed and tested on macOS only.
 
 ### Dependencies
 
-* Cmake >= 2.8, <http://www.cmake.org>
-* OpenCV >= 2.4, <http://opencv.org>
+* Cmake >= 3.13, <http://www.cmake.org>
+* OpenCV >= 4.0, <http://opencv.org>
 * (optional) Doxygen, <http://www.doxygen.org>
 * (optional) libdispatch (a.k.a. Grand Central Dispatch on MacOS)
 

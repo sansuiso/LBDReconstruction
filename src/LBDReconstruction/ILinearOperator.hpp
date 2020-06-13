@@ -33,10 +33,6 @@
 #ifndef LTS2_ILINEAROPERATOR_HPP
 #define LTS2_ILINEAROPERATOR_HPP
 
-#ifndef __APPLE__ || _WIN32 || _WIN64
-#include <unistd.h>   // For getpid()
-#endif
-
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
@@ -74,7 +70,7 @@ namespace lts2
       cv::Mat X, Ax;
       float norm = 1.0f;
       
-      cv::RNG rng(getpid());
+      cv::RNG rng(42);
       rng.fill(X, cv::RNG::UNIFORM, 0.0f, 1.0f);
       X /= cv::norm(X);
 

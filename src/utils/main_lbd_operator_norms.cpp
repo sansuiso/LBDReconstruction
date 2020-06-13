@@ -85,7 +85,7 @@ int main(int argc, char *const *argv)
   cv::Mat imagef;
   testImage.convertTo(imagef, CV_32F, 1.0/255.0);
 
-  cv::RNG rng(getpid());
+  cv::RNG rng(42);
 
   cv::Size patchSize(psize,psize);
 

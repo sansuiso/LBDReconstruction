@@ -119,7 +119,7 @@ void lts2::RandomFreakOperator::initWithPatchSize(cv::Size patchSize)
         }
     
     // Now, select randomly lbd::kLbdPairsInUse pairs
-    cv::RNG rng(getpid());
+    cv::RNG rng(42);
     for (int i = 0; i < _pairsInUse; ++i)
     {
       unsigned int randomPair = rng(lbd::kFreakTotalPairs);

@@ -50,7 +50,7 @@ void lts2::BriefOperator::initWithPatchSize(cv::Size patchSize)
     // Set the size variable
     this->setPatchSize(patchSize);
 
-    cv::RNG rng(getpid());
+    cv::RNG rng(42);
 
     // Only 9x9 patches (except borders)
     int const detectorRadius = 9 / 2;

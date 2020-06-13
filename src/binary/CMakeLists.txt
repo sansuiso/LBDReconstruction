@@ -2,9 +2,8 @@
 # NON-BINARIZED LBD RECONSTRUCTION
 # -----------------------------------------------
 
-set (BIHT_SRC_FILES main_lbdrec_biht.cpp)
-add_executable (lbdrec_biht ${BIHT_SRC_FILES})
-target_link_libraries (lbdrec_biht LBDReconstruction ${LBD_EXT_LIBRARIES})
+add_executable (lbdrec_biht main_lbdrec_biht.cpp)
+target_link_libraries (lbdrec_biht PRIVATE LBDReconstruction)
 
 # -----------------------------------------------
 # INSTALL BINARIES

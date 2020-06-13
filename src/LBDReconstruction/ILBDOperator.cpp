@@ -354,19 +354,19 @@ lts2::LBDOperator *lts2::CreateLbdOperator(int lbdType, int M)
 {
   switch (lbdType)
   {
-  case lbd::eTypeExFreak:
+  case (int)lbd::LBD_TYPE::eTypeExFreak:
     return lts2::CreateExFreakOperator(M);
     break;
 
-  case lbd::eTypeBrief:
+  case (int)lbd::LBD_TYPE::eTypeBrief:
     return lts2::CreateBriefOperator(M);
     break;
 
-  case lbd::eTypeRandomFreak:
+  case (int)lbd::LBD_TYPE::eTypeRandomFreak:
     return lts2::CreateRandomFreakOperator(M);
     break;
 
-  case lbd::eTypeFreak:
+  case (int)lbd::LBD_TYPE::eTypeFreak:
   default:
     return lts2::CreateFreakOperator(M);
     break;

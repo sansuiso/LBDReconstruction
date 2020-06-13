@@ -45,13 +45,13 @@ int main(int argc, char * const *argv)
   int lbdType;
   if (strncmp(argv[1], "freak", 5) == 0)
   {
-    lbdType = lbd::eTypeFreak;;
+    lbdType = (int)lbd::LBD_TYPE::eTypeFreak;;
   }
   else
   {
     if (strncmp(argv[1], "brief", 5) == 0)
     {
-      lbdType = lbd::eTypeBrief;
+      lbdType = (int)lbd::LBD_TYPE::eTypeBrief;
     }
     else
     {

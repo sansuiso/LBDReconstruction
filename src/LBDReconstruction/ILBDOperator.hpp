@@ -55,12 +55,12 @@ namespace lbd
     double scaleFactor;
   };
 
-  typedef enum {
+  enum class LBD_TYPE {
     eTypeFreak       = 0,
     eTypeRandomFreak = 1,
     eTypeBrief       = 2,
     eTypeExFreak     = 3,
-  } LBD_TYPE;
+  };
 }
 
 namespace lts2

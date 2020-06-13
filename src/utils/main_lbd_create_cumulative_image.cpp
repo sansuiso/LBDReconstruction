@@ -76,10 +76,10 @@ int main(int argc, char **argv)
     case 0:
       if (optionIndex == 0)
       {
-        if (strncmp(optarg, "freak", 5) == 0) lbdType = (int)lbd::eTypeFreak;
-        else if (strncmp(optarg, "brief", 5) == 0) lbdType = (int)lbd::eTypeBrief;
-        else if (strncmp(optarg, "exfreak", 7) == 0) lbdType = (int)lbd::eTypeExFreak;
-        else lbdType = lbd::eTypeRandomFreak;
+        if (strncmp(optarg, "freak", 5) == 0) lbdType = (int)lbd::LBD_TYPE::eTypeFreak;
+        else if (strncmp(optarg, "brief", 5) == 0) lbdType = (int)lbd::LBD_TYPE::eTypeBrief;
+        else if (strncmp(optarg, "exfreak", 7) == 0) lbdType = (int)lbd::LBD_TYPE::eTypeExFreak;
+        else lbdType = (int)lbd::LBD_TYPE::eTypeRandomFreak;
       }
       break;
       

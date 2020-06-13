@@ -40,7 +40,7 @@ endif()
 # -----------------------------------------------
 
 # Find the dependencies
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 
 # Include the dependancies
 include_directories(SYSTEM ${OPENCV_INCLUDE_DIRS})

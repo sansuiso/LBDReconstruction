@@ -79,7 +79,7 @@ static
 void ExtractFastKeypoints(cv::Mat const &anImage, std::vector<cv::KeyPoint> &fastPoints)
 {
   fastPoints.clear();
-  cv::FastFeatureDetector FAST;
+  auto FAST = cv::FastFeatureDetector::create();
 
   cv::Mat anImage8;
   if (anImage.type() == CV_32F)
@@ -93,7 +93,7 @@ void ExtractFastKeypoints(cv::Mat const &anImage, std::vector<cv::KeyPoint> &fas
   else
     srcImage = anImage8;
 
-  FAST.detect(srcImage, fastPoints);
+  FAST->detect(srcImage, fastPoints);
   std::cerr << "Detected " << fastPoints.size() << " FAST\n";
 }
 

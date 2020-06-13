@@ -101,7 +101,7 @@ _Beyond Bits: Reconstructing Images from Local Binary Descriptors_ [ \[pre-print
 E. d'Angelo, A. Alahi, P. Vandergheynst  
 21st International Conference on Pattern Recognition (ICPR), 2012.
 
-_FREAK: Fast Retina Keypoint_ [ \[pre-print\] ][freak] [ \[homepage\] ][freak-home]  
+_FREAK: Fast Retina Keypoint_ [ \[pre-print\] ][freak]  
 A. Alahi, R. Ortiz, P. Vandergheynst  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2012.  
 
@@ -116,5 +116,3 @@ M. Calonder, V. Lepetit, C. Strecha, P. Fua
 [brief]: http://cvlab.epfl.ch/research/detect/brief/ "BRIEF homepage"
 
 [freak]: http://infoscience.epfl.ch/record/175537 "FREAK"
-
-[freak-home]: http://www.ivpe.com/freak.htm "FREAK homepage"

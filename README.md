@@ -10,10 +10,10 @@ It was used to generate the figures in the above references.
 
 ### Authors
 
-* [Emmanuel d'Angelo](mailto:emmanuel.dangelo@gmail.com) (code, contact author)
-* [Alexandre Alahi](http://www.ivpe.com)
-* [Laurent Jacques](http://perso.uclouvain.be/laurent.jacques/)
-* [Pierre Vandergheynst](http://personnes.epfl.ch/pierre.vandergheynst)
+* [Emmanuel d'Angelo](https://www.linkedin.com/in/emmanueldangelo/) (code, contact author)
+* [Alexandre Alahi](https://people.epfl.ch/alexandre.alahi)
+* [Laurent Jacques](https://perso.uclouvain.be/laurent.jacques/)
+* [Pierre Vandergheynst](https://people.epfl.ch/pierre.vandergheynst)
 
 ## Installing the code
 

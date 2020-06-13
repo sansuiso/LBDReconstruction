@@ -156,8 +156,8 @@ void lts2::ProxMeanConstraint(cv::Mat& X, float mean)
   {
     float* p_x = X.ptr<float>(y);
         
-    for (int x = 0; x < X.cols; ++x)
-      *p_x++ = *p_x - x_mean + mean;
+    for (int x = 0; x < X.cols; ++x, ++p_x)
+      *p_x = *p_x - x_mean + mean;
   }
 }
 

@@ -93,10 +93,10 @@ void lts2::HorizontalGradientWithForwardScheme(const Mat& X, Mat& Dx)
 #else
     for (int i=0; i<X.rows; ++i) 
     {
-        register const float *xj = X.ptr<float>(i);
-        register const float *xjp1 = xj + X.channels();
+        const float *xj = X.ptr<float>(i);
+        const float *xjp1 = xj + X.channels();
         
-        register float *pdx = Dx.ptr<float>(i);
+        float *pdx = Dx.ptr<float>(i);
         
         for (int j=0; j < valuesPerRow; ++j, ++xj, ++xjp1, ++pdx)
             *pdx = (*xjp1 - *xj);

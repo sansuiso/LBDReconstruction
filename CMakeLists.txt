@@ -1,7 +1,13 @@
 # LBD Inverse Problem (aka LBD reconstruction) CMakeLists.txt
 cmake_minimum_required(VERSION 3.13)
 
-project(LBDReconstruction)
+project(LBDReconstruction LANGUAGES CXX)
+
+# -----------------------------------------------
+# Handle globally the C++ standard
+# -----------------------------------------------
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # -----------------------------------------------
 # USER DEFINED VARIABLES

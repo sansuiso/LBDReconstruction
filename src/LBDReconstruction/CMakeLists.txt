@@ -3,18 +3,24 @@
 # -----------------------------------------------
 include_directories (${CMAKE_CURRENT_SOURCE_DIR})
 
-set (LBDREC_SRC_FILES BriefOperator.cpp
-                      ExFreakOperator.cpp
-                      FreakOperator.cpp
-                      ILBDOperator.cpp
-                      RandomFreakOperator.cpp
-                      SignOperator.cpp
-                      reconstruction.cpp
-                      wavelets.cpp
-                      prox.cpp
-                      derivatives.cpp
-)
-
 # Add library target
-add_library (LBDReconstruction ${LBDREC_SRC_FILES})
-target_link_libraries (LBDReconstruction ${LBD_EXT_LIBRARIES} )
+add_library (LBDReconstruction "")
+target_sources(LBDReconstruction
+    PRIVATE
+        BriefOperator.cpp
+        ExFreakOperator.cpp
+        FreakOperator.cpp
+        ILBDOperator.cpp
+        RandomFreakOperator.cpp
+        SignOperator.cpp
+        reconstruction.cpp
+        wavelets.cpp
+        prox.cpp
+        derivatives.cpp
+)
+target_link_libraries (LBDReconstruction
+    PUBLIC
+        ${OpenCV_LIBS}
+    PRIVATE
+        ${LBD_EXT_LIBRARIES}
+)
